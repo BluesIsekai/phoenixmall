@@ -138,7 +138,7 @@ void Controller::processInput() {
         glfwGetKey(window, GLFW_KEY_RIGHT_SHIFT) == GLFW_PRESS;
     camera.SetRunning(isShiftHeld && !camera.inDrivingMode);
 
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS && isShiftHeld)
         glfwSetWindowShouldClose(window, true);
 
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS){

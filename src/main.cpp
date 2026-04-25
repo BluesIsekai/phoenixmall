@@ -10,7 +10,7 @@ int main()
 {
     //Controller:
     Controller controller;
-    if (!controller.initializeWindow("Cham City 3D")) return -1;
+    if (!controller.initializeWindow("Phoenix")) return -1;
     controller.initializeOpenGLSettings();
     
     //Renderer:
